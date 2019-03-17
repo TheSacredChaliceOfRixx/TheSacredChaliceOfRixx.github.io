@@ -1,4 +1,4 @@
-# The Sacred Chalice of Rixx
+# About the Sacred Chalice of Rixx
 
 [A chalice](http://www.metmuseum.org/art/collection/search/548339):
 
