@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to the Sacred Chalice of Rixx's Blog!"
 tags: [GitHub, Jekyll]
 ---
-[The Sacred Chalice of Rixx](about)
+[The Sacred Chalice of Rixx](/about)
 
 **Hello universe**, this is my first Jekyll blog post.
 
