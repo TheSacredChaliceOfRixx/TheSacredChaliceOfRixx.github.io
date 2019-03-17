@@ -1,5 +1,5 @@
 ---
-title: Hello, world x
+title: The Sacred Chalice of Rixx
 permalink: /
 ---
-Hello world 3
+This is the GitHub page for the [Sacred Chalice of Rixx](./about).
