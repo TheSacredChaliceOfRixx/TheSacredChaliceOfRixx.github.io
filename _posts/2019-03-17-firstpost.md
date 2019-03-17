@@ -1,13 +1,12 @@
 ---
 layout: post
 title:  "Welcome to the Sacred Chalice of Rixx's Blog!"
+tags: [GitHub, Jekyll]
 ---
-
-# Welcome to the Sacred Chalice of Rixx's Blog
 
 **Hello universe**, this is my first Jekyll blog post.
 
-I created these pages and this blog mostly to test out GitHub's Jekyll integration. All went smoothly as I followed these instructions:
+I created these pages and this blog mostly to test out GitHub's Jekyll integration. All went smoothly when I followed these instructions:
 
 * https://pages.github.com
 
