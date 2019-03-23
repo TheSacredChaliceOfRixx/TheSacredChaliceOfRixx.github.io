@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Death of the calorie - Here we go again"
+title:  "Calories are Dead - Again"
 author: The Sacred Chalice of Rixx
 tags: [Health, Peter Wilson, Matthew MacDonald]
 ---
-Calories are Dead - Again
-=========================
-
 Being interested in health and fitness, I tend to selectively notice articles telling me I've been doing everything wrong.
 
 One thing that keeps cropping up in my information feeds are articles declaring the uselessness of calories and calorie counting for body weight loss. It seems to me that these articles all follow the same pattern:
