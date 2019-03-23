@@ -17,8 +17,8 @@ Such an article I read recently was "[Death of the calorie](https://www.1843maga
 * Describes how inaccurate calorie labels can be, therefore they are useless.
 * Ignores that calories labels are just one piece of data that should not be used in isolation of everything else, for example, the other items on the food label.
 * Suggests that instead of using calories, we should be doing other things, things that any knowledgeable person would do anyway _in addition_ to calorie counting, such as reducing sugar intake. 
-    * This is the logical fallacy of a false dichotomy: you don't have to do either one or the other exclusively; you can do both.
-* Says that 80% of people who attempt to lose weight fail, which is true, but neglects to examine why this is, and what the 20% who succeed do. Instead the author simply assumes that calorie counting cannot work because this is what mainstream organizations recommend.
+    * This is the logical fallacy of a false dilemma: you don't have to do either one or the other exclusively; you can do both.
+* Says that 80% of people who attempt to lose weight fail, which is true, but neglects to examine why this is, and what the 20% who succeed do. Instead the author simply assumes that calorie counting cannot work because most people who try it fail, conveniently ignoring similar, if not worse, failure rates for everyone who tries other methods of weight loss.
 
 The author seems to think that they have made a new discovery. Calorie skeptics have been writing articles like this for decades. At least to the author's credit, they do not put the scientific notion of energy equations or thermodynamics into doubt.
 
