@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+	<script src="./static/jquery.js"></script>
+	<script src="./static/moment.js"></script>
+    <script src="./static/Chart.js"></script>
+</head>
+<body>
+
+<h1>Dashboard</h1>
+
+
+ <div id="tableOfContents"></div>
+<script>
+
+        var test_times  = {};
+        var content_page   = 'tableOfContents.html';
+        var content_div = document.getElementById('tableOfContents');
+
+        // TEST 1 = use jQuery to load in testpage.htm and time it.
+        function test_()
+        {
+            var start = new Date().getTime();
+            $(content_div).load(content_page);
+        }
+
+
+
+        test_();
+    </script>
+
+<p>
+Generated: 2020-07-17 12:50:05
+</p>
+
+
+<canvas id="myChart"></canvas>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [
+			
+				'07.07.2020, 00:00 Uhr',
+			
+				'08.07.2020, 00:00 Uhr',
+			
+				'09.07.2020, 00:00 Uhr',
+			
+				'10.07.2020, 00:00 Uhr',
+			
+				'11.07.2020, 00:00 Uhr',
+			
+				'12.07.2020, 00:00 Uhr',
+			
+				'13.07.2020, 00:00 Uhr',
+			
+				'15.07.2020, 00:00 Uhr',
+			
+				'16.07.2020, 00:00 Uhr',
+			
+				'17.07.2020, 00:00 Uhr',
+			
+			],
+        datasets: [{
+            label: '# of Votes',
+            data: [
+				'189',
+			
+				'190',
+			
+				'190',
+			
+				'194',
+			
+				'195',
+			
+				'197',
+			
+				'199',
+			
+				'201',
+			
+				'201',
+			
+				'201',
+			],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+
+<table border=1>
+<tr><th>Last update</th><th>Landkreis</th><th>Fallzahl</th><th>faelle_100000_EW</th><th>faelle_100000_EW 7 Tage</th><th>Recovered</th><th>Death</th></tr>
+
+
+
+<tr>
+
+    
+
+    <td>07.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>189</td>
+
+    
+
+    <td>146.426496223126</td>
+
+    
+
+    <td>13.9453805926787</td>
+
+    
+
+    <td>0</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>08.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>190</td>
+
+    
+
+    <td>147.201239589386</td>
+
+    
+
+    <td>13.9453805926787</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>09.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>190</td>
+
+    
+
+    <td>147.201239589386</td>
+
+    
+
+    <td>0.774743366259926</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>10.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>194</td>
+
+    
+
+    <td>150.300213054426</td>
+
+    
+
+    <td>3.87371683129963</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>11.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>195</td>
+
+    
+
+    <td>151.074956420686</td>
+
+    
+
+    <td>4.64846019755956</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>12.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>197</td>
+
+    
+
+    <td>152.624443153206</td>
+
+    
+
+    <td>6.19794693007941</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>13.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>199</td>
+
+    
+
+    <td>154.173929885725</td>
+
+    
+
+    <td>7.74743366259926</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>15.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>201</td>
+
+    
+
+    <td>155.723416618245</td>
+
+    
+
+    <td>8.52217702885919</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>5</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>16.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>201</td>
+
+    
+
+    <td>155.723416618245</td>
+
+    
+
+    <td>8.52217702885919</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>6</td>
+
+    
+
+</tr>
+
+
+
+<tr>
+
+    
+
+    <td>17.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>201</td>
+
+    
+
+    <td>155.723416618245</td>
+
+    
+
+    <td>5.42320356381948</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>6</td>
+
+    
+
+</tr>
+
+
+
+</table>
+
+<hr>
+
+<table border=1>
+<tr><th>Recorded</th><th>Land</th><th>Fallzahl</th><th>faelle_100000_EW</th><th>Death</th></tr>
+
+
+
+
+<tr>
+    
+    <td>2020-07-10 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>35990</td>
+
+    
+
+    <td>325.126633616793</td>
+
+    
+
+    <td>1837</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-11 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36041</td>
+
+    
+
+    <td>325.587357659984</td>
+
+    
+
+    <td>1837</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-12 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36041</td>
+
+    
+
+    <td>325.587357659984</td>
+
+    
+
+    <td>1837</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-13 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36041</td>
+
+    
+
+    <td>325.587357659984</td>
+
+    
+
+    <td>1837</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-15 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36162</td>
+
+    
+
+    <td>326.680448036968</td>
+
+    
+
+    <td>1838</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-16 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36227</td>
+
+    
+
+    <td>327.267645346918</td>
+
+    
+
+    <td>1838</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-17 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36264</td>
+
+    
+
+    <td>327.60189612335</td>
+
+    
+
+    <td>1839</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-10 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7126</td>
+
+    
+
+    <td>174.449746428505</td>
+
+    
+
+    <td>236</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-11 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7136</td>
+
+    
+
+    <td>174.694553818946</td>
+
+    
+
+    <td>236</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-12 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7157</td>
+
+    
+
+    <td>175.208649338873</td>
+
+    
+
+    <td>236</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-13 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7174</td>
+
+    
+
+    <td>175.624821902623</td>
+
+    
+
+    <td>236</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-15 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7222</td>
+
+    
+
+    <td>176.799897376742</td>
+
+    
+
+    <td>236</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-16 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7258</td>
+
+    
+
+    <td>177.681203982331</td>
+
+    
+
+    <td>238</td>
+
+    
+    
+
+</tr>
+
+
+
+<tr>
+    
+    <td>2020-07-17 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7275</td>
+
+    
+
+    <td>178.097376546081</td>
+
+    
+
+    <td>238</td>
+
+    
+    
+
+</tr>
+
+
+
+</table>
+
+    
+</body>
+</html>
