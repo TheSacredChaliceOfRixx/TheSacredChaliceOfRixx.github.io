@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
 
-	<script src="./static/jquery.js"></script>
-	<script src="./static/moment.js"></script>
-    <script src="./static/Chart.js"></script>
+	<script src="./static/jquery.min.js"></script>
+	<script src="./static/moment.min.js"></script>
+    <script src="./static/Chart.min.js"></script>
+    <script type="text/javascript" src="./static/chartjs-plugin-colorschemes.min.js"></script>
 </head>
 <body>
 
@@ -33,88 +34,125 @@
     </script>
 
 <p>
-Generated: 2020-07-17 12:50:05
+Generated: 2020-07-18 07:39:07
 </p>
 
-
+<div style="width: 80%; border-radius: 0 0 4px;">
 <canvas id="myChart"></canvas>
+</div>
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-        labels: [
-			
-				'07.07.2020, 00:00 Uhr',
-			
-				'08.07.2020, 00:00 Uhr',
-			
-				'09.07.2020, 00:00 Uhr',
-			
-				'10.07.2020, 00:00 Uhr',
-			
-				'11.07.2020, 00:00 Uhr',
-			
-				'12.07.2020, 00:00 Uhr',
-			
-				'13.07.2020, 00:00 Uhr',
-			
-				'15.07.2020, 00:00 Uhr',
-			
-				'16.07.2020, 00:00 Uhr',
-			
-				'17.07.2020, 00:00 Uhr',
-			
-			],
         datasets: [{
-            label: '# of Votes',
             data: [
-				'189',
+				{x: 1594072800000, y: 189},
 			
-				'190',
+				{x: 1594159200000, y: 190},
 			
-				'190',
+				{x: 1594245600000, y: 190},
 			
-				'194',
+				{x: 1594332000000, y: 194},
 			
-				'195',
+				{x: 1594418400000, y: 195},
 			
-				'197',
+				{x: 1594504800000, y: 197},
 			
-				'199',
+				{x: 1594591200000, y: 199},
 			
-				'201',
+				{x: 1594764000000, y: 201},
 			
-				'201',
+				{x: 1594850400000, y: 201},
 			
-				'201',
+				{x: 1594936800000, y: 201},
+			
+				{x: 1595023200000, y: 201},
 			],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+            label: "LK Germersheim",
+            borderColor: "#3e95cd",
+            fill: false
+        }
+        
+            
+                
+                ,{  label: "Baden-Württemberg",
+                    fill: false,
+                    data: [
+            
+            {x: 1594332000000, y: 35990},
+        
+            
+            {x: 1594418400000, y: 36041},
+        
+            
+            {x: 1594504800000, y: 36041},
+        
+            
+            {x: 1594591200000, y: 36041},
+        
+            
+            {x: 1594764000000, y: 36162},
+        
+            
+            {x: 1594850400000, y: 36227},
+        
+            
+            {x: 1594936800000, y: 36264},
+        
+            
+            {x: 1595023200000, y: 36342},
+        
+            
+                
+                    ]}
+                
+                ,{  label: "Rheinland-Pfalz",
+                    fill: false,
+                    data: [
+            
+            {x: 1594332000000, y: 7126},
+        
+            
+            {x: 1594418400000, y: 7136},
+        
+            
+            {x: 1594504800000, y: 7157},
+        
+            
+            {x: 1594591200000, y: 7174},
+        
+            
+            {x: 1594764000000, y: 7222},
+        
+            
+            {x: 1594850400000, y: 7258},
+        
+            
+            {x: 1594936800000, y: 7275},
+        
+            
+            {x: 1595023200000, y: 7293},
+        
+        ]}]
     },
     options: {
+        title: {
+            display: true,
+            text: 'Cumulative Cases'
+        },
         scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
+            xAxes: [{
+                type: 'time',
+                time: {
+                    unit: 'day'
                 }
             }]
+        },
+        plugins: {
+            colorschemes: {
+                scheme: 'office.Slice6'
+            }
         }
     }
 });
@@ -122,7 +160,7 @@ var myChart = new Chart(ctx, {
 
 
 
-<table border=1>
+<table border="1">
 <tr><th>Last update</th><th>Landkreis</th><th>Fallzahl</th><th>faelle_100000_EW</th><th>faelle_100000_EW 7 Tage</th><th>Recovered</th><th>Death</th></tr>
 
 
@@ -487,13 +525,48 @@ var myChart = new Chart(ctx, {
 
 
 
+<tr>
+
+    
+
+    <td>18.07.2020, 00:00 Uhr</td>
+
+    
+
+    <td>LK Germersheim</td>
+
+    
+
+    <td>201</td>
+
+    
+
+    <td>155.723416618245</td>
+
+    
+
+    <td>4.64846019755956</td>
+
+    
+
+    <td>None</td>
+
+    
+
+    <td>6</td>
+
+    
+
+</tr>
+
+
+
 </table>
 
 <hr>
 
-<table border=1>
+<table border="1">
 <tr><th>Recorded</th><th>Land</th><th>Fallzahl</th><th>faelle_100000_EW</th><th>Death</th></tr>
-
 
 
 
@@ -518,7 +591,7 @@ var myChart = new Chart(ctx, {
     <td>1837</td>
 
     
-    
+
 
 </tr>
 
@@ -545,7 +618,7 @@ var myChart = new Chart(ctx, {
     <td>1837</td>
 
     
-    
+
 
 </tr>
 
@@ -572,7 +645,7 @@ var myChart = new Chart(ctx, {
     <td>1837</td>
 
     
-    
+
 
 </tr>
 
@@ -599,7 +672,7 @@ var myChart = new Chart(ctx, {
     <td>1837</td>
 
     
-    
+
 
 </tr>
 
@@ -626,7 +699,7 @@ var myChart = new Chart(ctx, {
     <td>1838</td>
 
     
-    
+
 
 </tr>
 
@@ -653,7 +726,7 @@ var myChart = new Chart(ctx, {
     <td>1838</td>
 
     
-    
+
 
 </tr>
 
@@ -680,7 +753,34 @@ var myChart = new Chart(ctx, {
     <td>1839</td>
 
     
+
+
+</tr>
+
+
+
+<tr>
     
+    <td>2020-07-18 00:00:00</td>
+
+    
+
+    <td>Baden-Württemberg</td>
+
+    
+
+    <td>36342</td>
+
+    
+
+    <td>328.30653289529</td>
+
+    
+
+    <td>1838</td>
+
+    
+
 
 </tr>
 
@@ -707,7 +807,7 @@ var myChart = new Chart(ctx, {
     <td>236</td>
 
     
-    
+
 
 </tr>
 
@@ -734,7 +834,7 @@ var myChart = new Chart(ctx, {
     <td>236</td>
 
     
-    
+
 
 </tr>
 
@@ -761,7 +861,7 @@ var myChart = new Chart(ctx, {
     <td>236</td>
 
     
-    
+
 
 </tr>
 
@@ -788,7 +888,7 @@ var myChart = new Chart(ctx, {
     <td>236</td>
 
     
-    
+
 
 </tr>
 
@@ -815,7 +915,7 @@ var myChart = new Chart(ctx, {
     <td>236</td>
 
     
-    
+
 
 </tr>
 
@@ -842,7 +942,7 @@ var myChart = new Chart(ctx, {
     <td>238</td>
 
     
-    
+
 
 </tr>
 
@@ -869,7 +969,34 @@ var myChart = new Chart(ctx, {
     <td>238</td>
 
     
+
+
+</tr>
+
+
+
+<tr>
     
+    <td>2020-07-18 00:00:00</td>
+
+    
+
+    <td>Rheinland-Pfalz</td>
+
+    
+
+    <td>7293</td>
+
+    
+
+    <td>178.538029848876</td>
+
+    
+
+    <td>238</td>
+
+    
+
 
 </tr>
 
