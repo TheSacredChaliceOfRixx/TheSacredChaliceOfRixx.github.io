@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- ... -->
-    <title>test</title>
-    	<script src="./static/jquery.min.js"></script>
-
-    <script src="./static/plotly.min.js"></script>
-
-  </head>
-  <body>
-
-    <script>
-
-        // Load external includes:
-        function load_segment(fileName, domElementID)
-        {
-            domElement = document.getElementById(domElementID);
-            $(domElement).load(fileName);
-        }
-
-    </script>
-
-
-<div id="graph-data"></div>
-<script>
-
-        load_segment('first_figure.html', 'graph-data');
-
-</script>    
-
-    <figure>
-      <embed type="image/svg+xml" src="/bar_chart.svg" />
-    </figure>
-
 <div>
         
         
@@ -52,6 +17,3 @@
                 
             </script>
         </div>
-
-  </body>
-</html>
