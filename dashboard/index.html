@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Dashboard 2020-08-03 06:40:13</title>
+    <title>Dashboard 2020-08-03 07:40:23</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,8 @@
 	<script src="./static/moment.min.js"></script>
     <script src="./static/Chart.min.js"></script>
     <script type="text/javascript" src="./static/chartjs-plugin-colorschemes.min.js"></script>
+
+    <script src="./static/plotly.min.js"></script>
 
     <script>
 
@@ -27,7 +29,7 @@
 </head>
 <body>
 
-<h1>Dashboard 2020-08-03 06:40:13</h1>
+<h1>Dashboard 2020-08-03 07:40:23</h1>
 
 <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
     <div>
@@ -51,6 +53,13 @@
         load_segment('weather-chart.html', 'weather-data');
 
 </script>
+
+<div id="landkreis-graph"></div>
+<script>
+
+        load_segment('landkreis.html', 'landkreis-graph');
+
+</script>    
 
 <div uk-grid>
 <div style="position: relative; margin: auto; height: 95vh; width: 95vw;">
